@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Autodatenbank>
+    <Auto>
+        <Modellbezeichnung>
+
+        </Modellbezeichnung>
+        <Zulassungsdaten>
+            <B_2.1>
+
+            </B_2.1>
+            <B_2.2>
+
+            </B_2.2>
+            <J>
+
+            </J>
+            <vier>
+
+            </vier>
+            <D.1>
+
+            </D.1>
+            <D.2>
+
+            </D.2>
+            <zwei>
+
+            </zwei>
+            <fuenf>
+
+            </fuenf>
+            <V.9>
+
+            </V.9>
+            <vierzehn>
+
+            </vierzehn>
+            <P3>
+
+            </P3>
+        </Zulassungsdaten>
+        <Emissionsdaten>
+            <NEFZ>
+                <innerorts>
+
+                </innerorts>
+                <ausserorts>
+
+                </ausserorts>
+                <kombiniert>
+
+                </kombiniert>
+                <NEFZ_CO2_kombiniert>
+
+                </NEFZ_CO2_kombiniert>
+            </NEFZ>
+            <WLTP>
+                <sehr_schnell>
+
+                </sehr_schnell>
+                <schnell>
+
+                </schnell>
+                <langsam>
+
+                </langsam>
+                <WLTP_CO2_kombiniert>
+
+                </WLTP_CO2_kombiniert>
+            </WLTP>
+        </Emissionsdaten>
+    </Auto>
+</Autodatenbank>
