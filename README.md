@@ -17,7 +17,7 @@ Kopiert die Datei `docker-compose.yml` in den oben erstellten Ordner.
 Dann wechselt in die Kommandozeile und dort in den selben Ordner.  
 Dann startet ihr die Container mit:
 ```
-docker-compose up -d
+docker compose up -d
 ```
 Das dauert einen Moment, da die Images für die Container beim ersten Start runtergeladen werden müssen.
 
