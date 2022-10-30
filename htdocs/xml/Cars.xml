@@ -1,73 +1,60 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<Autodatenbank>
-    <Auto>
-        <Modellbezeichnung>
-
-        </Modellbezeichnung>
-        <Zulassungsdaten>
-            <B_2.1>
-
-            </B_2.1>
-            <B_2.2>
-
-            </B_2.2>
-            <J>
-
-            </J>
-            <vier>
-
-            </vier>
-            <D.1>
-
-            </D.1>
-            <D.2>
-
-            </D.2>
-            <zwei>
-
-            </zwei>
-            <fuenf>
-
-            </fuenf>
-            <V.9>
-
-            </V.9>
-            <vierzehn>
-
-            </vierzehn>
-            <P3>
-
-            </P3>
-        </Zulassungsdaten>
-        <Emissionsdaten>
-            <NEFZ>
-                <innerorts>
-
-                </innerorts>
-                <ausserorts>
-
-                </ausserorts>
-                <kombiniert>
-
-                </kombiniert>
-                <NEFZ_CO2_kombiniert>
-
-                </NEFZ_CO2_kombiniert>
-            </NEFZ>
-            <WLTP>
-                <sehr_schnell>
-
-                </sehr_schnell>
-                <schnell>
-
-                </schnell>
-                <langsam>
-
-                </langsam>
-                <WLTP_CO2_kombiniert>
-
-                </WLTP_CO2_kombiniert>
-            </WLTP>
-        </Emissionsdaten>
-    </Auto>
-</Autodatenbank>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Autodatenbank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="Auto">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Modellbezeichnung" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Zulassungsdaten">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="B_2.1" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded"  name="B_2.2" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="J" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="vier" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="D.1" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="D.2" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="zwei" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="fuenf" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="V.9" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="vierzehn" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="P3" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Emissionsdaten">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="NEFZ">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="innerorts" />
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="ausserorts" />
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="kombiniert" />
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="NEFZ_CO2_kombiniert" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="WLTP">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="sehr_schnell" />
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="schnell" />
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="langsam" />
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="WLTP_CO2_kombiniert" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
