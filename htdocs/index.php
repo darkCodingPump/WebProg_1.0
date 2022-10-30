@@ -7,8 +7,6 @@ $app = new Application(dirname(__DIR__));
 
 $app->router->get('/', 'home');
 $app->router->get('/car', 'car');
-$app->router->post('/car', function () {
-    return 'handling submitted data';
-});
+$app->router->post('/car',[]);
 
 $app->run();

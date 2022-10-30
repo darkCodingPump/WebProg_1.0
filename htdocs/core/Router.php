@@ -22,7 +22,7 @@ class Router
 
     public function post($path, $callback)
     {
-        $this->routes['get'][$path] = $callback;
+        $this->routes['post'][$path] = $callback;
     }
 
     public function resolve()
@@ -32,7 +32,7 @@ class Router
         $callback = $this->routes[$method][$path] ?? false;
         if ($callback === false) {
             Application::$app->response->setStatusCode(404);
-            return "not found";
+            return $this->renderView("_404");
         }
         if (is_string($callback)) {
             return $this->renderView($callback);
@@ -44,6 +44,12 @@ class Router
     {
         $layoutContent = $this->layoutContent();
         $viewContent = $this->renderOnlyView($view);
+        return str_replace('{{content}}', $viewContent, $layoutContent);
+    }
+
+    public function renderContent($viewContent)
+    {
+        $layoutContent = $this->layoutContent();
         return str_replace('{{content}}', $viewContent, $layoutContent);
     }
 
