@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Gruppe3\\Webprog\\' => array($baseDir . '/src'),
+    'app\\' => array($baseDir . '/'),
 );
