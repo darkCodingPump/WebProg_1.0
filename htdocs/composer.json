@@ -1,0 +1,9 @@
+{
+    "name": "gruppe3/webprog",
+    "autoload": {
+        "psr-4": {
+            "app\\": "."
+        }
+    },
+    "require": {}
+}
