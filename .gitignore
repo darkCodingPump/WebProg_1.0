@@ -1,2 +1,5 @@
 /db/
 .env
+.idea/
+htdocs/vendor
+htdocs/composer.lock
