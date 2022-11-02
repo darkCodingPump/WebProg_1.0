@@ -1,0 +1,10 @@
+footer{
+    position: fixed;
+    bottom: 0;
+}
+#social_links>li>a>i{
+    font-size: large;
+}
+body{
+    background-color: black;
+}

@@ -5,7 +5,7 @@ services:
     build:
       dockerfile: Dockerfile
     image: php:8.1.10-apache
-    restart: 'always'
+    restart: 'on-failure:3'
     ports:
       - '8080:80'
     links:

@@ -4,6 +4,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install git -y
 RUN composer require vlucas/phpdotenv
+COPY ./htdocs/composer.json .
 RUN composer install
 RUN docker-php-ext-install pdo pdo_mysql
 RUN apt-get install apache2-utils
