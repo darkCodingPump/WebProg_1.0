@@ -20,4 +20,10 @@ class SiteController extends Controller
     public function car(){
         return $this->render('car');
     }
+    public function shop(){
+        return $this->render('shop');
+    }
+    public function aboutus(){
+        return $this->render('aboutus');
+    }
 }

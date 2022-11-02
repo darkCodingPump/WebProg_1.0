@@ -1,10 +1,14 @@
+#social-links>li{
+    font-size: 1.5em;
+}
 footer{
-    position: fixed;
     bottom: 0;
+    width: 100%;
 }
-#social_links>li>a>i{
-    font-size: large;
+#logo{
+    width: 25%;
 }
-body{
-    background-color: black;
+#logo_anchor{
+    display: block;
+    max-width: fit-content;
 }
