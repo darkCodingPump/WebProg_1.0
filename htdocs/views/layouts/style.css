@@ -1,14 +1,26 @@
 #social-links>li{
     font-size: 1.5em;
 }
+.logo-dark{
+    content: url(../../statics/logo-no-background.svg);
+    width: 100%;
+    stroke: none;
+}
+.logo-light{
+    content: url(../../statics/logo-no-background.svg);
+    width: 100%;
+}
 footer{
     bottom: 0;
     width: 100%;
 }
-#logo{
-    width: 25%;
-}
-#logo_anchor{
+.navbar-brand{
+    margin: auto;
     display: block;
-    max-width: fit-content;
+    max-width: 20%;
+}
+#dd_user{
+    margin: auto;
+    right: 0;
+    left: auto;
 }
