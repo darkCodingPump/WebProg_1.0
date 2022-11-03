@@ -26,4 +26,16 @@ class SiteController extends Controller
     public function aboutus(){
         return $this->render('aboutus');
     }
+    public function newPost(){
+        return $this->render('newBlog');
+    }
+    public function posts(){
+        return $this->render('posts');
+    }
+    public function settings(){
+        return $this->render('settings');
+    }
+    public function user(){
+        return $this->render('profile');
+    }
 }

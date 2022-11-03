@@ -17,9 +17,7 @@
     document.querySelectorAll('.bg-light').forEach((element) => {
       element.className = element.className.replace(/-light/g, '-dark');
     });
-    document.querySelectorAll('.logo-light').forEach((element) => {
-      element.className = element.className.replace(/-light/g, '-dark');
-    });
+
     document.body.classList.add('bg-dark');
 
     if (document.body.classList.contains('text-dark')) {
@@ -27,6 +25,13 @@
     } else {
       document.body.classList.add('text-light');
     }
+
+    document.querySelectorAll('.link-dark').forEach((element) => {
+      element.className = element.className.replace(/-dark/g, '-light');
+    });
+    document.querySelectorAll('.blogContent-light').forEach((element) => {
+      element.className = element.className.replace(/-light/g, '-dark');
+    });
     // Tables
     var tables = document.querySelectorAll('table');
     for (var i = 0; i < tables.length; i++) {
@@ -49,16 +54,18 @@
     document.querySelectorAll('.bg-dark').forEach((element) => {
       element.className = element.className.replace(/-dark/g, '-light');
     });
-    document.querySelectorAll('.logo-dark').forEach((element) => {
-      element.className = element.className.replace(/-dark/g, '-light');
-    });
     document.body.classList.add('bg-light');
-
     if (document.body.classList.contains('text-light')) {
       document.body.classList.replace('text-light', 'text-dark');
     } else {
       document.body.classList.add('text-dark');
     }
+    document.querySelectorAll('.link-light').forEach((element) => {
+      element.className = element.className.replace(/-light/g, '-dark');
+    });
+    document.querySelectorAll('.blogContent-dark').forEach((element) => {
+      element.className = element.className.replace(/-dark/g, '-light');
+    });
 
     // Tables
     var tables = document.querySelectorAll('table');
