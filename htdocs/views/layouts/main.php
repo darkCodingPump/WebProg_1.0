@@ -24,7 +24,7 @@
               <li class="nav-item"><a href="/" class="nav-link link-dark px-2">Home</a></li>
               <li class="nav-item"><a href="/car" class="nav-link link-dark px-2 ">Blog</a></li>
               <li class="nav-item"><a href="/shop" class="nav-link link-dark px-2 ">Shop</a></li>
-              <li class="nav-item"><a href="/aboutus" class="nav-link link-dark px-2 ">Über uns</a></li>
+              <li class="nav-item"><a href="/login" class="nav-link link-dark px-2 ">Über uns</a></li>
             </ul>
 
           <form class="d-flex">
@@ -41,6 +41,8 @@
               <li><a class="dropdown-item" href="/User/settings">Einstellungen</a></li>
               <li><a class="dropdown-item" href="/User">Profil</a></li>
               <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/login">login</a></li>
+              <li><a class="dropdown-item" href="/register">Registrieren</a></li>
               <li><a class="dropdown-item" href="/logout">Abmelden</a></li>
               <div class="form-check form-switch ms-auto mt-3 me-3">
   <label class="form-check-label ms-3" for="lightSwitch">
@@ -96,7 +98,7 @@
           <div class="d-flex flex-column flex-sm-row w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">E-Mail Adresse</label>
             <input id="newsletter1" type="text" class="form-control" placeholder="E-Mail Adresse">
-            <button class="btn btn-primary" type="button">Anmelden</button>
+            <button class="btn btn-dark text-center" type="button">Anmelden</button>
           </div>
         </form>
       </div>

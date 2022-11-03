@@ -32,6 +32,12 @@
     document.querySelectorAll('.blogContent-light').forEach((element) => {
       element.className = element.className.replace(/-light/g, '-dark');
     });
+    document.querySelectorAll('.line-light').forEach((element) => {
+      element.className = element.className.replace(/-light/g, '-dark');
+    });
+    document.querySelectorAll('.btn-dark').forEach((element) => {
+      element.className = element.className.replace(/-dark/g, '-light');
+    });
     // Tables
     var tables = document.querySelectorAll('table');
     for (var i = 0; i < tables.length; i++) {
@@ -66,7 +72,12 @@
     document.querySelectorAll('.blogContent-dark').forEach((element) => {
       element.className = element.className.replace(/-dark/g, '-light');
     });
-
+    document.querySelectorAll('.line-dark').forEach((element) => {
+      element.className = element.className.replace(/-dark/g, '-light');
+    });
+    document.querySelectorAll('.btn-light').forEach((element) => {
+      element.className = element.className.replace(/-light/g, '-dark');
+    });
     // Tables
     var tables = document.querySelectorAll('table');
     for (var i = 0; i < tables.length; i++) {

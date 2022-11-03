@@ -1,0 +1,14 @@
+.line-dark:after,
+.line-dark:before{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+.line-light:after,
+.line-light:before{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #000000;
+}

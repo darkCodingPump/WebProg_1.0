@@ -4,17 +4,16 @@ namespace app\controllers;
 
 use app\core\Application;
 use app\core\Controller;
+use app\core\Request;
 
 class SiteController extends Controller
 {
     public function home()
     {
-        $params =[
-            'name' => "Test Test"
-        ];
-        return $this->render('home', $params);
+        return $this->render('home');
     }
-    public function handleCar(){
+    public function handleCar(Request $request){
+        $body = $request->getBody();
         return "TEST TEST";
     }
     public function car(){
