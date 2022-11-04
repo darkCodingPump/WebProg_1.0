@@ -45,18 +45,18 @@
                     <div class="form-outline mb-4">
                         <input type="email" name="mail" id="emailAddress" class="form-control form-control-lg"
                                placeholder="Enter a valid email address" required />
-                        <label class="form-label" for="emailAddress">Email address</label>
+                        <label class="form-label" for="emailAddress">E-Mail Adresse</label>
                     </div>
 
                     <!-- Password input -->
                     <div class="form-outline mb-3">
                         <input type="password" name="password" id="password" class="form-control form-control-lg"
-                               placeholder="Enter password" required />
+                               placeholder="Passwort" required />
                         <label class="form-label" for="password">Passwort</label>
                     </div>
                     <div class="form-outline mb-3">
                         <input type="password" name="passwordRep" id="passwordRep" class="form-control form-control-lg<?php echo $model->hasError('passwordRep') ? ' is-invalid' : ''?>"
-                               placeholder="Enter password" required />
+                               placeholder="Passwort bestätigen" required />
                         <label class="form-label" for="passwordRep">Passwort bestätigen</label>
                         <div class="invalid-feedback">
                             <?php echo "Die Passwörter stimmen nicht überein!"?>
@@ -67,7 +67,7 @@
                         <button type="submit" class="btn btn-dark btn-lg">Registrieren</button>
                     </div>
                 </form>
-                <p class="small fw-bold mt-2 pt-1 mb-0">Du hast einen Account? <a href="/register" class="link-danger">Log dich ein</a></p>
+                <p class="small fw-bold mt-2 pt-1 mb-0">Du hast einen Account? <a href="/login" class="link-danger">Log dich ein</a></p>
             </div>
         </div>
     </div>
