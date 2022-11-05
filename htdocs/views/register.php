@@ -43,14 +43,17 @@
 
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                        <input type="email" name="mail" id="emailAddress" class="form-control form-control-lg"
+                        <input type="email" name="email" id="emailAddress" class="form-control form-control-lg<?php echo $model->hasError('email') ? ' is-invalid' : ''?>"
                                placeholder="Enter a valid email address" required />
                         <label class="form-label" for="emailAddress">E-Mail Adresse</label>
+                        <div class="invalid-feedback">
+                            <?php echo "Es besteht bereits ein Account mit dieser Adresses!"?>
+                        </div>
                     </div>
 
                     <!-- Password input -->
                     <div class="form-outline mb-3">
-                        <input type="password" name="password" id="password" class="form-control form-control-lg"
+                        <input type="password" name="password" id="password" class="form-control form-control-lg<?php echo $model->hasError('password') ? ' is-invalid' : ''?>"
                                placeholder="Passwort" required />
                         <label class="form-label" for="password">Passwort</label>
                     </div>

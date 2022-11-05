@@ -2,33 +2,63 @@
 
 namespace app\controllers;
 
+use app\core\Application;
 use app\core\Controller;
 use app\core\Request;
-use app\models\RegisterModel;
+use app\core\Response;
+use app\models\LoginForm;
+use app\models\User;
 
 class AuthController extends Controller
 {
 
-    public function login(){
+    public function login(Request $request, Response $response)
+    {
+        $loginForm = new LoginForm();
+        if ($request->isPost()) {
+            $loginForm->loadData($request->getBody());
+            if ($loginForm->validate() && $loginForm->login()) {
+                Application::$app->session->setFlash('success', 'Willkommen zurück!');
+                $response->redirect('/');
+                return;
+            }
+        }
         $this->setLayout('main');
-        return $this->render('login');
+        return $this->render('login', [
+            'model' => $loginForm
+        ]);
     }
 
     public function register(Request $request)
     {
-        $registerModel = new RegisterModel();
+        $user = new User();
         if ($request->isPost()) {
-            $registerModel->loadData($request->getBody());
+            $user->loadData($request->getBody());
 
-            if($registerModel->validate() && $registerModel->register()){
-                return 'Success';
+            if ($user->validate() && $user->register()) {
+                Application::$app->session->setFlash('success', 'Willkommen im Blog!');
+                Application::$app->response->redirect('/');
+                exit;
             }
-            return $this->render('register',[
-                'model' => $registerModel
+            return $this->render('register', [
+                'model' => $user
             ]);
         }
-        return $this->render('register',[
-            'model' => $registerModel
+        return $this->render('register', [
+            'model' => $user
+        ]);
+    }
+
+    public function logout(Request $request, Response $response)
+    {
+        Application::$app->logout();
+        $response->redirect('/');
+    }
+
+    public function profile()
+    {
+        return $this->render('profile', [
+            'model' => Application::$app->user
         ]);
     }
 }

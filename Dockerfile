@@ -13,3 +13,4 @@ RUN a2enmod cache_disk
 RUN a2enmod expires
 RUN a2enmod headers
 RUN apache2ctl restart
+RUN php migrations.php

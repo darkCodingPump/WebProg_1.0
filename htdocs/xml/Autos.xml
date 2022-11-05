@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Autodatenbank>
+	<Auto>
+		<Modellbezeichnung>Opel Corsa</Modellbezeichnung>
+		<B_2_1>0035</B_2_1>
+		<B_2_2>BCB015509</B_2_2>
+		<J>M1</J>
+		<vier>AB</vier>
+		<D_1>Opel</D_1>
+		<D_2>CADRA12 BX2D6EHLJ5</D_2>
+		<zwei>Opel</zwei>
+		<fuenf>Fz.z.Pers.bef.b 8 Spl. Schräghecklimousine</fuenf>
+		<V_9>715/2007*136/2014W</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>5,8 l /100 km</innerorts>
+		<ausserorts>4,1 l / 100 km</ausserorts>
+		<kombiniert>5,5 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>128.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,7 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>149.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>OpelCora.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Volkswagen Sharan</Modellbezeichnung>
+		<B_2_1>0603</B_2_1>
+		<B_2_2>ATZ000049</B_2_2>
+		<J>M1</J>
+		<vier>AF</vier>
+		<D_1>Volkswagen</D_1>
+		<D_2>CFGBX0AF FD6FD62E0297MG7VR2VW</D_2>
+		<zwei>Volkswagen-VW</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Mehrzweckfahrzeug</fuenf>
+		<V_9>715/2007*692/2008A</V_9>
+		<vierzehn>EURO5</vierzehn>
+		<P3>Diesel</P3>
+		<innerorts>6,7 l / 100 km</innerorts>
+		<ausserorts>5,4 l / 100 km</ausserorts>
+		<kombiniert>5,9 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>163.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,7 l / 100km</sehr_schnell>
+		<schnell>5,9 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>194.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>VolkswagenSharan.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Mercedes-Benz 204 </Modellbezeichnung>
+		<B_2_1>1313</B_2_1>
+		<B_2_2>BFY001675</B_2_2>
+		<J>M1</J>
+		<vier>AC</vier>
+		<D_1>Mercedes-Benz</D_1>
+		<D_2>H231M0 NZAAA503</D_2>
+		<zwei>Daimler</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Kombilimousine</fuenf>
+		<V_9>715/2007*566/2011J</V_9>
+		<vierzehn>EURO5</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>10,5 l / 100 km</innerorts>
+		<ausserorts>5,8 l / 100 km</ausserorts>
+		<kombiniert>7,6 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>180.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,7 l / 100km</schnell>
+		<langsam>5,8 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>168.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>Mercedes-Benz204.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Opel Astra</Modellbezeichnung>
+		<B_2_1>0035</B_2_1>
+		<B_2_2>ACU00034</B_2_2>
+		<J>M1</J>
+		<vier>AB</vier>
+		<D_1>Opel</D_1>
+		<D_2>2A15ANXHGG5</D_2>
+		<zwei>Opel</zwei>
+		<fuenf>Fz.z.Pers.bef.b 8 Spl. Schräghecklimousine</fuenf>
+		<V_9>70/220*2003/76B</V_9>
+		<vierzehn>EURO4</vierzehn>
+		<P3>Diesel</P3>
+		<innerorts>6,0 l / 100 km</innerorts>
+		<ausserorts>3,8 l / 100 km</ausserorts>
+		<kombiniert>4,6 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>129.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,4 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>155.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>OpelAstra.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Daimler GLC 42</Modellbezeichnung>
+		<B_2_1>1313</B_2_1>
+		<B_2_2>FHI000158</B_2_2>
+		<J>M1</J>
+		<vier>AC</vier>
+		<D_1>Daimler</D_1>
+		<D_2>R75HP1</D_2>
+		<zwei>Daimler</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Kombilimousine</fuenf>
+		<V_9>715/2007*136/2014W</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>8,9 l / 100 km</innerorts>
+		<ausserorts>8,4 l / 100 km</ausserorts>
+		<kombiniert>8,7 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>196.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,7 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>161.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>DaimlerGLC42.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Volkswagen Phaenton</Modellbezeichnung>
+		<B_2_1>0603</B_2_1>
+		<B_2_2>ALQ00042</B_2_2>
+		<J>M1</J>
+		<vier>AA</vier>
+		<D_1>Volkswagen</D_1>
+		<D_2>CARA AA6QA69L141S5</D_2>
+		<zwei>Volkswagen-VW</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Limousine</fuenf>
+		<V_9>70/220/EWG*2006/96B/EG</V_9>
+		<vierzehn>98/69/EG I ; B</vierzehn>
+		<P3>Diesel</P3>
+		<innerorts>11,6 l / 100 km</innerorts>
+		<ausserorts>6,7 l / 100 km</ausserorts>
+		<kombiniert>8,5 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>205.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,7 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>254.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>VolkswagenPhaenton.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Nissan Qashqai</Modellbezeichnung>
+		<B_2_1>1329</B_2_1>
+		<B_2_2>ABC000571</B_2_2>
+		<J>M1</J>
+		<vier>AF</vier>
+		<D_1>Nissan</D_1>
+		<D_2>SJNJBNJ1OU7089265</D_2>
+		<zwei>Nissan</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Mehrzweckfahrzeug</fuenf>
+		<V_9>715/2007*962/2008A</V_9>
+		<vierzehn>EURO5</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>6,6 l / 100 km</innerorts>
+		<ausserorts>5,1 l / 100 km</ausserorts>
+		<kombiniert>5,6 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>138.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,7 l / 100km</sehr_schnell>
+		<schnell>5,4 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>141.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>NissanQashqai.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Seat Ibiza</Modellbezeichnung>
+		<B_2_1>7593</B_2_1>
+		<B_2_2>ASF000796</B_2_2>
+		<J>M1</J>
+		<vier>AF</vier>
+		<D_1>Seat</D_1>
+		<D_2>SCNBTSX0 SGFM52T08720GG</D_2>
+		<zwei>Seat</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Mehrzweckfahrzeug</fuenf>
+		<V_9>715/2007*195/201JJ</V_9>
+		<vierzehn>EURO4</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>5,8 l /100 km</innerorts>
+		<ausserorts>4,1 l / 100 km</ausserorts>
+		<kombiniert>5,5 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>112.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,7 l / 100km</schnell>
+		<langsam>6,4 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>122.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>SeatIbiza.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Volkswagen Caddy</Modellbezeichnung>
+		<B_2_1>0603</B_2_1>
+		<B_2_2>BSV000172</B_2_2>
+		<J>M1</J>
+		<vier>AC</vier>
+		<D_1>Volkswagen</D_1>
+		<D_2>CCUUDX01 N0J2FM5FMA04057N1SBVR27MMLL161</D_2>
+		<zwei>Volkswagen-VW</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Kombilimousine</fuenf>
+		<V_9>715/2007*136/2014W</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Diesel</P3>
+		<innerorts>5,6 l / 100 km</innerorts>
+		<ausserorts>4,9 l / 100 km</ausserorts>
+		<kombiniert>5,2 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>159.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,7 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>164.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>VolkswagenCaddy2.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Mercedes-Benz A 250 e</Modellbezeichnung>
+		<B_2_1>2222</B_2_1>
+		<B_2_2>AJO00030</B_2_2>
+		<J>M1</J>
+		<vier>AA</vier>
+		<D_1>Mercedes-Benz</D_1>
+		<D_2>X08QT2 HZAA051B</D_2>
+		<zwei>Mercedes-Benz</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Limousine</fuenf>
+		<V_9>715/2007*2018/1832AP</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Hybr. B / E ext. aufl.</P3>
+		<innerorts>1,6 l / 100 km</innerorts>
+		<ausserorts>2,3 l / 100 km</ausserorts>
+		<kombiniert>1,9 l / 100km</kombiniert>
+		<NEFZ_CO2_kombiniert>36.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>5,2 l / 100km</sehr_schnell>
+		<schnell>2,7 l / 100km</schnell>
+		<langsam>2,2 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>40.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>Mercedes-BenzA250e.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Mercedes-Benz E 212 K</Modellbezeichnung>
+		<B_2_1>1313</B_2_1>
+		<B_2_2>BMI003212</B_2_2>
+		<J>M1</J>
+		<vier>AC</vier>
+		<D_1>Mercedes-Benz</D_1>
+		<D_2>J2S7M0 NZAAB502</D_2>
+		<zwei>Daimler</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Kombilimousine</fuenf>
+		<V_9>715/2007/*566/2011J</V_9>
+		<vierzehn>EURO5</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>8,0 l / 100km</innerorts>
+		<ausserorts>7,0 l / 100km</ausserorts>
+		<kombiniert>7,5 l / 100km</kombiniert>
+		<NEFZ_CO2_kombiniert>175.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,8 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>167.0 g /km</WLTP_CO2_kombiniert>
+		<Dateiname>Mercedes-BenzE212K.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Volkswagen Caddy</Modellbezeichnung>
+		<B_2_1>0603</B_2_1>
+		<B_2_2>CLL005938</B_2_2>
+		<J>M1</J>
+		<vier>AC</vier>
+		<D_1>Volkswagen</D_1>
+		<D_2>SK ACDPBCX0 N215FD7FD7GC005N1N4BI1AA6CN</D_2>
+		<zwei>Volkswagen-VW</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Kombilimousine</fuenf>
+		<V_9>715/2007*2018/1832AP</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>5,6 l / 100 km</innerorts>
+		<ausserorts>4,9 l / 100 km</ausserorts>
+		<kombiniert>5,2 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>159.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,7 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>164.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>VolkswagenCaddy.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Peugeot 208</Modellbezeichnung>
+		<B_2_1>3003</B_2_1>
+		<B_2_2>ARN003856</B_2_2>
+		<J>M1</J>
+		<vier>AB</vier>
+		<D_1>Peugot</D_1>
+		<D_2>AHMZ 6</D_2>
+		<zwei>Peugeot (F)</zwei>
+		<fuenf>Fz.z.Pers.bef.b 8 Spl. Schräghecklimousine</fuenf>
+		<V_9>715/2007*2015/45W</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>5,7 l / 100 km</innerorts>
+		<ausserorts>4,8 l / 100 km</ausserorts>
+		<kombiniert>5,2 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>115.0 g /km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,4 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>164.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>Peugeot208.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Kia Sorento Hybrid</Modellbezeichnung>
+		<B_2_1>8253</B_2_1>
+		<B_2_2>AIP000047</B_2_2>
+		<J>M1</J>
+		<vier>AF</vier>
+		<D_1>Kia</D_1>
+		<D_2>MQ4 A62C20</D_2>
+		<zwei>Kia Motor</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Mehrzweckfahrzeug</fuenf>
+		<V_9>715/2007*2018/1832AP</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Hybr. B / E</P3>
+		<innerorts>8,3 l / 100km</innerorts>
+		<ausserorts>6,6 l / 100km</ausserorts>
+		<kombiniert>1,58 l / 100km</kombiniert>
+		<NEFZ_CO2_kombiniert>145.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>8,4 l / 100km</sehr_schnell>
+		<schnell>5,9 l / 100km</schnell>
+		<langsam>6,7 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>165.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>KiaSorentoHybrid.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Kia Stinger</Modellbezeichnung>
+		<B_2_1>8253</B_2_1>
+		<B_2_2>AHK00002</B_2_2>
+		<J>M1</J>
+		<vier>AB</vier>
+		<D_1>Kia</D_1>
+		<D_2>CK B5P32</D_2>
+		<zwei>Kia Motor</zwei>
+		<fuenf>Fz.z.Pers.bef.b 8 Spl. Schräghecklimousine</fuenf>
+		<V_9>715/2007*2016/646W</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>14,2 l / 100km</innerorts>
+		<ausserorts>8,5 l / 100km</ausserorts>
+		<kombiniert>10,6 l / 100km</kombiniert>
+		<NEFZ_CO2_kombiniert>244.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,7 l / 100km</schnell>
+		<langsam>6,4 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>252.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>KiaStinger.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Lexus CT 200h</Modellbezeichnung>
+		<B_2_1>5013</B_2_1>
+		<B_2_2>AHB000019</B_2_2>
+		<J>M1</J>
+		<vier>AB</vier>
+		<D_1>Lexus</D_1>
+		<D_2>A10 (a) ZWA10-AHXBBW (1A)</D_2>
+		<zwei>Toyota Europe</zwei>
+		<fuenf>Fz.z.Pers.bef.b 8 Spl. Schräghecklimousine</fuenf>
+		<V_9>715/2007*692/2008F</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Hybr. B / E</P3>
+		<innerorts>3,9 l / 100km</innerorts>
+		<ausserorts>3,7 l / 100km</ausserorts>
+		<kombiniert>3,8 l / 100km</kombiniert>
+		<NEFZ_CO2_kombiniert>88.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,4 l / 100km</sehr_schnell>
+		<schnell>5,7 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>102.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>LexusCT200h.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>BMW M550i XDrive</Modellbezeichnung>
+		<B_2_1>0005</B_2_1>
+		<B_2_2>COP00008</B_2_2>
+		<J>M1</J>
+		<vier>AA</vier>
+		<D_1>BMW</D_1>
+		<D_2>G5L JB51 CA15000D</D_2>
+		<zwei>Bayrische Motoren Werke-BMW</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Limousine</fuenf>
+		<V_9>715/2007*2016/646ZD</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>14,0 l / 100km</innerorts>
+		<ausserorts>7,6 l / 100km</ausserorts>
+		<kombiniert>9,9 l / 100km</kombiniert>
+		<NEFZ_CO2_kombiniert>220.0 g /km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,7 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>228.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>BMWM550iXDrive.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Volkswagen Golf Plus</Modellbezeichnung>
+		<B_2_1>0603</B_2_1>
+		<B_2_2>ADA000392</B_2_2>
+		<J>M1</J>
+		<vier>AF</vier>
+		<D_1>Volkswagen</D_1>
+		<D_2>1KP AFBLX0 FM6FM6AG006N0GGN1</D_2>
+		<zwei>Volkswagen-VW</zwei>
+		<fuenf>Fz.z.Pers.bef.b. 8 Spl. Mehrzweckfahrzeug</fuenf>
+		<V_9>70/220/EWG*2003/76B/EG</V_9>
+		<vierzehn>EURO 4</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>7,7 l / 100km</innerorts>
+		<ausserorts>7,2 l / 100km</ausserorts>
+		<kombiniert>6,8 l / 100km</kombiniert>
+		<NEFZ_CO2_kombiniert>156.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,5 l / 100km</sehr_schnell>
+		<schnell>5,4 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>169.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>VolkswagenGolfPlus.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Mini Cooper S</Modellbezeichnung>
+		<B_2_1>0005</B_2_1>
+		<B_2_2>BXM001014</B_2_2>
+		<J>M1</J>
+		<vier>AB</vier>
+		<D_1>BMW</D_1>
+		<D_2>UKL-L XM71 6H2400C0</D_2>
+		<zwei>Bayrische Motoren Werke-BMW</zwei>
+		<fuenf>Fz.z.Pers.bef.b 8 Spl. Schräghecklimousine</fuenf>
+		<V_9>715/2007*136/2014W</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>6,8 l / 100km</innerorts>
+		<ausserorts>4,9 l / 100 km</ausserorts>
+		<kombiniert>5,6 l / 100 km</kombiniert>
+		<NEFZ_CO2_kombiniert>128.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>6,4 l / 100km</sehr_schnell>
+		<schnell>5,7 l / 100km</schnell>
+		<langsam>6,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>142.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>MiniCooperS.jpg</Dateiname>
+	</Auto>
+	<Auto>
+		<Modellbezeichnung>Audi A1 Sportback</Modellbezeichnung>
+		<B_2_1>0588</B_2_1>
+		<B_2_2>BDB000618</B_2_2>
+		<J>M1</J>
+		<vier>AB</vier>
+		<D_1>Audi</D_1>
+		<D_2>8X SCHZBF1 FM5DF002P8X01LLS47MMEM2</D_2>
+		<zwei>Audi</zwei>
+		<fuenf>Fz.z.Pers.bef.b 8 Spl. Schräghecklimousine</fuenf>
+		<V_9>715/2007*136/2014W</V_9>
+		<vierzehn>EURO6</vierzehn>
+		<P3>Benzin</P3>
+		<innerorts>6,7 l / 100 km</innerorts>
+		<ausserorts>5,4 l / 100 km</ausserorts>
+		<kombiniert>5,9l / 100km</kombiniert>
+		<NEFZ_CO2_kombiniert>161.0 g / km</NEFZ_CO2_kombiniert>
+		<sehr_schnell>7,8 l / 100km</sehr_schnell>
+		<schnell>5,9l / 100km</schnell>
+		<langsam>7,0 l / 100km</langsam>
+		<WLTP_CO2_kombiniert>110.0 g / km</WLTP_CO2_kombiniert>
+		<Dateiname>AudiA1Sportback.jpg</Dateiname>
+	</Auto>
+</Autodatenbank>

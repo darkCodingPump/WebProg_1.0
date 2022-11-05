@@ -47,6 +47,18 @@ abstract class Model
                 if ($ruleName === self::RULE_MATCH && $value !== $this->{$rule['match']}) {
                     $this->addErrorByRule($attribute, self::RULE_MATCH, ['match' => $rule['match']]);
                 }
+                if ($ruleName === self::RULE_UNIQUE){
+                    $className = $rule['class'];
+                    $uniqueAttr = $rule['attribute'] ?? $attribute;
+                    $tableName = $className::tableName();
+                    $statement = Application::$app->db->prepare("SELECT * FROM $tableName WHERE $uniqueAttr = :attr");
+                    $statement->bindValue(":attr", $value);
+                    $statement->execute();
+                    $record = $statement->fetchObject();
+                    if ($record){
+                        $this->addErrorByRule($attribute, self::RULE_UNIQUE);
+                    }
+                }
             }
         }
         return empty($this->errors);
@@ -69,6 +81,7 @@ abstract class Model
             self::RULE_MIN => 'Das Passwort muss mindestens {min} Zeichen haben',
             self::RULE_MATCH => 'Dieses Feld muss identisch mit {match} sein',
             self::RULE_EMAIL => 'Bitte geb eine valide Mail-Adresse ein',
+            self::RULE_UNIQUE => 'Es besteht bereits ein Account mit dieser Mail',
         ];
     }
 
