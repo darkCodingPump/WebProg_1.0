@@ -21,7 +21,7 @@ class LoginForm extends Model
 
     public function login()
     {
-        $user = User::findUser(['email' => $this->email]);
+        $user = User::findInstance(['email' => $this->email]);
         if (!$user) {
             $this->addErrorByRule('email', 'Keine Übereinstimmung gefunden');
             return false;

@@ -1,0 +1,11 @@
+.titlePics{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.background-dark{
+    background-color: #212529;
+}
+.background-light{
+    background-color: #ffffff
+}

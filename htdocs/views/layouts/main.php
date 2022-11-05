@@ -4,21 +4,21 @@ use app\core\Application;
 
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Autoblog.com - Your favourite Blog!</title>
-    <link rel="stylesheet" href="./views/layouts/style.css">
+    <link rel="stylesheet" href="/views/layouts/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="../favicon.png" type="image/png">
 </head>
 <body class="bg-light text-dark">
-<header class="mb-3 border-bottom">
-    <nav class="navbar navbar-expand-lg">
+<header class="">
+    <nav class="navbar navbar-expand-lg shadow-lg p-2 rounded">
         <div class="container-fluid">
             <a id="logo_anchor" href="/" class="navbar-brand">
                 <img class="logo-light"/>
@@ -26,9 +26,9 @@ use app\core\Application;
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item"><a href="/" class="nav-link link-dark px-2">Home</a></li>
-                    <li class="nav-item"><a href="/car" class="nav-link link-dark px-2 ">Blog</a></li>
+                    <li class="nav-item"><a href="/blog" class="nav-link link-dark px-2 ">Blog</a></li>
+                    <li class="nav-item"><a href="/car" class="nav-link link-dark px-2 ">Autos</a></li>
                     <li class="nav-item"><a href="/shop" class="nav-link link-dark px-2 ">Shop</a></li>
-                    <li class="nav-item"><a href="/login" class="nav-link link-dark px-2 ">Über uns</a></li>
                 </ul>
                 <div class="form-check form-switch ms-auto me-3">
                     <label class="form-check-label ms-3" for="lightSwitch">
@@ -73,10 +73,13 @@ use app\core\Application;
                 <?php echo Application::$app->session->getFlash('success') ?>
             </div>
         <?php endif ?>
-        {{content}}
+        <div class="pt-3 pb-3">
+            {{content}}
+        </div>
+
     </div>
 </main>
-<footer class="p-2 pb-0 border-top">
+<footer class="p-2 pb-0 shadow-lg">
     <div class="container">
         <div class="row d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <div class="col-6">
@@ -124,6 +127,6 @@ use app\core\Application;
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
 
-<script src="./views/js/switch.js"></script>
+<script src="/views/js/switch.js"></script>
 </body>
 </html>

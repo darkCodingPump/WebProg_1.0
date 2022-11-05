@@ -2,13 +2,11 @@
 
 namespace app\core;
 
-use http\Params;
-
 class Router
 {
-    public Request $request;
-    public Response $response;
-    protected array $routes = [];
+    private Request $request;
+    private Response $response;
+    private array $routeMap = [];
 
     public function __construct(Request $request, Response $response)
     {
@@ -16,30 +14,80 @@ class Router
         $this->response = $response;
     }
 
-
-    public function get($path, $callback)
+    public function get(string $url, $callback)
     {
-        $this->routes['get'][$path] = $callback;
+        $this->routeMap['get'][$url] = $callback;
     }
 
-    public function post($path, $callback)
+    public function post(string $url, $callback)
     {
-        $this->routes['post'][$path] = $callback;
+        $this->routeMap['post'][$url] = $callback;
+    }
+
+    public function getRouteMap($method): array
+    {
+        return $this->routeMap[$method] ?? [];
+    }
+
+    public function getCallback()
+    {
+        $method = $this->request->getMethod();
+        $url = $this->request->getUrl();
+        // Trim slashes
+        $url = trim($url, '/');
+
+        // Get all routes for current request method
+        $routes = $this->getRouteMap($method);
+
+        $routeParams = false;
+        // Start iterating registed routes
+        foreach ($routes as $route => $callback) {
+            // Trim slashes
+            $route = trim($route, '/');
+            $routeNames = [];
+            if (!$route) {
+                continue;
+            }
+
+            // Find all route names from route and save in $routeNames
+            if (preg_match_all('/\{(\w+)(:[^}]+)?}/', $route, $matches)) {
+                $routeNames = $matches[1];
+            }
+
+            // Convert route name into regex pattern
+            $routeRegex = "@^" . preg_replace_callback('/\{\w+(:([^}]+))?}/', fn($m) => isset($m[2]) ? "({$m[2]})" : '(\w+)', $route) . "$@";
+
+            // Test and match current route against $routeRegex
+            if (preg_match_all($routeRegex, $url, $valueMatches)) {
+                $values = [];
+                for ($i = 1; $i < count($valueMatches); $i++) {
+                    $values[] = $valueMatches[$i][0];
+                }
+                $routeParams = array_combine($routeNames, $values);
+
+                $this->request->setRouteParams($routeParams);
+                return $callback;
+            }
+        }
+        return false;
     }
 
     public function resolve()
     {
-        $path = $this->request->getPath();
-        $method = $this->request->method();
-        $callback = $this->routes[$method][$path] ?? false;
-        if ($callback === false) {
-            Application::$app->response->setStatusCode(404);
-            return $this->renderView("_404");
+        $method = $this->request->getMethod();
+        $url = $this->request->getUrl();
+        $callback = $this->routeMap[$method][$url] ?? false;
+        if (!$callback) {
+            $callback = $this->getCallback();
+            if ($callback === false) {
+                Application::$app->response->setStatusCode(404);
+                return $this->renderView("_404");
+            }
         }
         if (is_string($callback)) {
             return $this->renderView($callback);
         }
-        if (is_array($callback)){
+        if (is_array($callback)) {
             Application::$app->controller = new $callback[0]();
             $callback[0] = new Application::$app->controller;
         }
@@ -48,32 +96,11 @@ class Router
 
     public function renderView($view, $params = [])
     {
-        $layoutContent = $this->layoutContent();
-        $viewContent = $this->renderOnlyView($view, $params);
-        return str_replace('{{content}}', $viewContent, $layoutContent);
+        return Application::$app->view->renderView($view, $params);
     }
 
-    public function renderContent($viewContent)
+    public function renderViewOnly($view, $params = [])
     {
-        $layoutContent = $this->layoutContent();
-        return str_replace('{{content}}', $viewContent, $layoutContent);
-    }
-
-    protected function layoutContent()
-    {
-        $layout = Application::$app->controller->layout;
-        ob_start();
-        include_once Application::$ROOT_DIR . "/views/layouts/$layout.php";
-        return ob_get_clean();
-    }
-
-    protected function renderOnlyView($view, $params)
-    {
-        foreach ($params as $key => $value){
-            $$key = $value;
-        }
-        ob_start();
-        include_once Application::$ROOT_DIR . "/views/$view.php";
-        return ob_get_clean();
+        return Application::$app->view->renderViewOnly($view, $params);
     }
 }

@@ -38,6 +38,9 @@
     document.querySelectorAll('.btn-dark').forEach((element) => {
       element.className = element.className.replace(/-dark/g, '-light');
     });
+    document.querySelectorAll('.background-light').forEach((element) => {
+      element.className = element.className.replace(/-light/g, '-dark');
+    });
     // Tables
     var tables = document.querySelectorAll('table');
     for (var i = 0; i < tables.length; i++) {
@@ -77,6 +80,9 @@
     });
     document.querySelectorAll('.btn-light').forEach((element) => {
       element.className = element.className.replace(/-light/g, '-dark');
+    });
+    document.querySelectorAll('.background-dark').forEach((element) => {
+      element.className = element.className.replace(/-dark/g, '-light');
     });
     // Tables
     var tables = document.querySelectorAll('table');

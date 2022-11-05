@@ -27,7 +27,7 @@ abstract class DbModel extends Model
         return Application::$app->db->pdo->prepare($SQL);
     }
 
-    public static function findUser($where)
+    public static function findInstance($where)
     {
         $tableName = static::tableName();
         $attributes = array_keys($where);
@@ -38,5 +38,20 @@ abstract class DbModel extends Model
         }
         $statement->execute();
         return $statement->fetchObject(static::class);
+    }
+
+    public function getAllInstances()
+    {
+        $tableName = static::tableName();
+        $statement = self::prepare( "SELECT * FROM $tableName ORDER BY id DESC");
+        $statement->execute();
+        return $statement->fetchAll(\PDO::FETCH_ASSOC);
+    }
+    public function getRandomInstances($nmbr)
+    {
+        $tableName = static::tableName();
+        $statement = self::prepare( "SELECT * FROM $tableName ORDER BY RAND() LIMIT $nmbr");
+        $statement->execute();
+        return $statement->fetchAll(\PDO::FETCH_ASSOC);
     }
 }

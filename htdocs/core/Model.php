@@ -85,9 +85,7 @@ abstract class Model
         ];
     }
 
-    /**
-     * @return array
-     */
+
     public function hasError($attribute){
         return $this->errors[$attribute] ?? false;
     }

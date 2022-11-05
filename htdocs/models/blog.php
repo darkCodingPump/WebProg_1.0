@@ -6,13 +6,13 @@ use app\core\DbModel;
 
 class blog extends DbModel
 {
-    public int $userId;
-    public string $title;
-    public string $category;
-    public string $text;
-    public string $created;
+    public int $userId = 0;
+    public string $title = "";
+    public string $category= "";
+    public string $text= "";
+    public string $created= "";
     public car $referenceCar;
-    public string $titlePicture;
+    public string $titlePicture = "";
 
     public function saveBlog()
     {

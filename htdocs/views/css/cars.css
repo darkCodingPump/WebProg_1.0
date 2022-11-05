@@ -1,0 +1,9 @@
+.table{
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    display: inline-block;
+}
+tr {
+     cursor: pointer;
+ }

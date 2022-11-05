@@ -2,17 +2,15 @@
 
 namespace app\models;
 
-use app\core\DbModel;
-use app\core\Model;
 use app\core\UserModel;
 
 class User extends UserModel
 {
-    public string $name;
-    public string $lastname;
-    public string $email;
-    public string $password;
-    public string $passwordRep;
+    public string $name = "";
+    public string $lastname= "";
+    public string $email= "";
+    public string $password= "";
+    public string $passwordRep= "";
 
     public function register()
     {
