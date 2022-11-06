@@ -67,20 +67,6 @@ ALTER TABLE `blogEntrys`
 --
 -- AUTO_INCREMENT für Tabelle `blogEntrys`
 --
-ALTER TABLE `blogEntrys`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- Constraints der exportierten Tabellen
---
-
---
--- Constraints der Tabelle `blogEntrys`
---
-ALTER TABLE `blogEntrys`
-  ADD CONSTRAINT `blogentrys_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `users` (`id`);
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

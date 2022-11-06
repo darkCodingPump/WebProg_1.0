@@ -14,7 +14,6 @@ services:
       - mariadb
     volumes: 
       - ./htdocs:/var/www/html/
-    exec: "php migrations.php"
   mariadb:
     image: mariadb:10.9.2
     restart: 'always'

@@ -12,7 +12,7 @@ class m0003
     public function down()
     {
         $db = \app\core\Application::$app->db;
-        $SQL = "DELETE FROM blogEntrys;";
+        $SQL = "DROP TABLE blogEntrys;";
         $db->pdo->exec($SQL);
     }
 }

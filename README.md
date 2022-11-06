@@ -1,37 +1,19 @@
-# Webdev Container
+# Gruppe 3 - AutoBlog
+Hallo, hier erfährst du alles, was dieses Package zu bieten hat. 
 
-Dieser Container dient einzig Demozwecken im Zuge der Vorlesung Webendtwicklung an der DHBW für den Jahrgang WWI2021a.  
-Benutzt den Container nicht in produktiven Umgebungen, dafür ist er nicht ausgelegt.
+Aber zunächst:
+## Wie starte ich das Ding ?!
+Naja am besten erstmal mit docker compose up -d (oder Rechtsklick auf die Datei "docker-compose.yml") die Docker Container und Initialisierung starten.
+Danach die Befehle "composer install" und "php migrations.php" in die Konsole des "Web"-Docker-Containers schreiben.
 
-## Docker installieren
-Die Doku zum Installieren von Docker findet ihr hier:  
-https://docs.docker.com/engine/install/
+## Und nu?
+Nun kann man über localhost:8080 den Blog erreichen oder über localhost:8081 phpMyAdmin erreichen.
 
-## Umgebung anlegen
-Legt euch einen Ordner an, in dem ihr arbeiten wollt:  
-z.B. /home/niels/project/wwi2021a/webdev/coding
+## Und was sonst?
+Zunächst solltest du deine Augen schonen und den Darkmode anmachen, sofern das nicht automatisch passiert ist. Dann kannst du im Blog (Navbar-> Blog) stöbern oder die die feinste Auswahl an heißer Schlitten anschauen (Navbar-> Autos). Nen Shop haben wir noch nicht, aber kommt bestimmt noch ;)
+Ach und wenn du direkt nach einem Auto suchen möchtest, kannst du das auch! (Navbar-> Suche ... -> Enter) 
+Ansonsten kannst du dich Einloggen bzw einen Account erstellen (Navbar-> Login).
+Viel Spaß!
 
-## Container starten
-Kopiert die Datei `docker-compose.yml` in den oben erstellten Ordner.  
-
-Dann wechselt in die Kommandozeile und dort in den selben Ordner.  
-Dann startet ihr die Container mit:
-```
-docker compose up -d
-```
-Das dauert einen Moment, da die Images für die Container beim ersten Start runtergeladen werden müssen.
-
-## Testdatei anlegen
-Sind die erfolgreich Container gestartet, wurden in dem Ordner zwei Unterordner angelegt:
-- db
-- htdocs
-
-wechselt in den Ordner `htdocs` und erstellt eine Datei `ìndex.php` mit folgendem Inhalt:
-
-```php
-<?
-    phpinfo();
-```
-
-Speicher die Datei ind ruft im Browser dir URL http://localhost:8080/ auf.  
-Wenn ihr jetzt eine PHP Version 8.1.10 sehr, hat alles geklappt.
+## Ich hab Bugs gefunden
+Glückwunsch.

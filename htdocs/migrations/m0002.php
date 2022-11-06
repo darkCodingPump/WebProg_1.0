@@ -21,16 +21,11 @@ class m0002
             print $tabInsert;
             $db->pdo->exec($tabInsert);
         }
-        $SQL = "CREATE TABLE blogEntrys (id INT AUTO_INCREMENT PRIMARY KEY, userId INT NOT NULL, title VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL,  text VARCHAR(5000) NOT NULL, date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , carReferenceId INT , titlePicture BLOB, FOREIGN KEY (userId) REFERENCES users(id));";
-        $db->pdo->exec($SQL);
-
     }
 
     public function down()
     {
         $db = \app\core\Application::$app->db;
-        $SQL = "DROP TABLE blogEntrys;";
-        $db->pdo->exec($SQL);
         $SQL = "DROP TABLE carDb;";
         $db->pdo->exec($SQL);
     }
