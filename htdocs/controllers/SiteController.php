@@ -18,4 +18,12 @@ class SiteController extends Controller
             'models' => $entrys
         ]);
     }
+    public function shop()
+    {
+        return $this->render('shop');
+    }
+    public function aboutus()
+    {
+        return $this->render('aboutus');
+    }
 }

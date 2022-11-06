@@ -82,16 +82,26 @@ use app\core\Application;
 <footer class="p-2 pb-0 shadow-lg">
     <div class="container">
         <div class="row d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <div class="col-6">
+            <div class="col-3">
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link link-dark" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-dark" href="/car">Car</a>
+                        <a class="nav-link link-dark" href="/blog">Blog</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link link-dark" href="/car">Autos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
                         <a class="nav-link link-dark" href="/shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" href="/login">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-dark" href="/aboutus">Über uns</a>

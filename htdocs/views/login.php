@@ -69,7 +69,7 @@
                         </button>
                     </div>
                 </form>
-                <p class="small fw-bold mt-2 pt-1 mb-0">Noch kein Account? <a href="/register" class="link-danger">Register</a>
+                <p class="small fw-bold mt-2 pt-1 mb-0">Noch kein Account? <a href="/register" class="link-danger">Registrieren</a>
                 </p>
             </div>
         </div>
