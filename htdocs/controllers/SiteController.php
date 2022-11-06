@@ -18,29 +18,4 @@ class SiteController extends Controller
             'models' => $entrys
         ]);
     }
-    public function handleCar(Request $request){
-        $body = $request->getBody();
-        return "TEST TEST";
-    }
-    public function car(){
-        return $this->render('car');
-    }
-    public function shop(){
-        return $this->render('shop');
-    }
-    public function aboutus(){
-        return $this->render('aboutus');
-    }
-    public function newPost(){
-        return $this->render('newBlog');
-    }
-    public function posts(){
-        return $this->render('posts');
-    }
-    public function settings(){
-        return $this->render('settings');
-    }
-    public function user(){
-        return $this->render('profile');
-    }
 }
