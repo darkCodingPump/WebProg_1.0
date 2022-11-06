@@ -36,8 +36,8 @@ use app\core\Application;
                     </label>
                     <input class="form-check-input" type="checkbox" id="lightSwitch"/>
                 </div>
-                <form class="d-flex">
-                    <input type="search" class="form-control me-2" placeholder="Suche..." aria-label="Search">
+                <form action="" method="post" class="d-flex">
+                    <input type="search" name="query" class="form-control me-2" placeholder="Suche..." aria-label="Search">
                 </form>
                 <?php if (!Application::isGuest()): ?>
                     <div class="dropdown">

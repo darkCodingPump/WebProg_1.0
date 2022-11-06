@@ -7,6 +7,7 @@ $dotenv->load();
 use app\controllers\AuthController;
 use app\controllers\BlogController;
 use app\controllers\CarController;
+use app\controllers\SearchController;
 use app\controllers\SiteController;
 use app\core\Application;
 
@@ -23,6 +24,7 @@ $app = new Application(dirname(__DIR__), $config);
 $app->router->get('/', [SiteController::class, 'home']);
 $app->router->get('/aboutus', [SiteController::class, 'aboutus']);
 $app->router->get('/shop', [SiteController::class, 'shop']);
+$app->router->post('/', [SearchController::class, 'searchFor']);
 
 $app->router->get('/login', [AuthController::class, 'login']);
 $app->router->post('/login', [AuthController::class, 'login']);
