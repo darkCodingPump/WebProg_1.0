@@ -5,25 +5,25 @@
     <thead>
     <tr>
         <th>Modellbezeichnung</th>
-        <th>B_2_1</th>
-        <th>B_2_2</th>
-        <th>J</th>
-        <th>vier</th>
-        <th>D_1</th>
-        <th>D_2</th>
-        <th>zwei</th>
-        <th>fuenf</th>
-        <th>V_9</th>
-        <th>vierzehn</th>
-        <th>P3</th>
-        <th>innerorts</th>
-        <th>ausserorts</th>
-        <th>kombiniert</th>
-        <th>NEFZ_CO2_kombiniert</th>
-        <th>sehr_schnell</th>
+        <th>HSN</th>
+        <th>TSN</th>
+        <th>Fahrzeugklasse</th>
+        <th>Aufbau</th>
+        <th>Marke</th>
+        <th>Variante</th>
+        <th>Hersteller</th>
+        <th>Bezeichnung Fahrzeugklasse</th>
+        <th>EG-Typengenehmigung</th>
+        <th>Abgasnorm</th>
+        <th>Kraftstoff</th>
+        <th>NEFZ: Innerorts</th>
+        <th>Ausserorts</th>
+        <th>Kombiniert</th>
+        <th>CO2 kombiniert</th>
+        <th>WLTP: sehr schnell</th>
         <th>schnell</th>
         <th>langsam</th>
-        <th>WLTP_CO2_kombiniert</th>
+        <th>CO2 kombiniert</th>
     </tr>
     </thead>
     <tbody>

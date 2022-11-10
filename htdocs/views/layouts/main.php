@@ -44,7 +44,7 @@ use app\core\Application;
                         <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle"
                            data-bs-toggle="dropdown"
                            aria-expanded="false">
-                            <img src="./statics/placeholder_portrait.png" alt="mdo" width="32" height="32"
+                            <img src="/statics/placeholder_portrait.png" alt="User" width="32" height="32"
                                  class="rounded-circle">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg-end">

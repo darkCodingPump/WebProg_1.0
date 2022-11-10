@@ -34,11 +34,22 @@ class AuthController extends Controller
         $user = new User();
         if ($request->isPost()) {
             $user->loadData($request->getBody());
-
             if ($user->validate() && $user->register()) {
-                Application::$app->session->setFlash('success', 'Willkommen im Blog!');
-                Application::$app->response->redirect('/');
-                exit;
+                $loginForm = new LoginForm();
+                $_user = new User();
+                $_user->loadData($request->getBody());
+                $loginForm->email = $_user->email;
+                $loginForm->password = $_user->password;
+                if($loginForm->login()){
+                    Application::$app->session->setFlash('success', 'Willkommen im Blog!');
+                    Application::$app->response->redirect('/');
+                    exit;
+                }
+                else{
+                    return $this->render('register', [
+                        'model' => $user
+                    ]);
+                }
             }
             return $this->render('register', [
                 'model' => $user

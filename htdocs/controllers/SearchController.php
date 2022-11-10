@@ -55,7 +55,10 @@ class SearchController extends Controller
                     'BlogResults' => $BlogResults
                 ]);
             }
+            else{
+                return $response->redirect('/');
+            }
         }
-        return $this->render('home');
+        return $response->redirect('/');
     }
 }

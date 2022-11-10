@@ -37,6 +37,13 @@ class User extends UserModel
             'passwordRep' => [[self::RULE_MATCH, 'match' => 'password']],
         ];
     }
+    
+    public function save()
+    {
+        $this->password = password_hash($this->password, PASSWORD_DEFAULT);
+
+        return parent::save();
+    }
 
     public function attributes(): array
     {

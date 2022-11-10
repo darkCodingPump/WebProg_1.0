@@ -26,7 +26,7 @@ class LoginForm extends Model
             $this->addErrorByRule('email', 'Keine Übereinstimmung gefunden');
             return false;
         }
-        if (password_verify($this->password, $user->password)) {
+        if (!password_verify($this->password, $user->password)) {
             $this->addErrorByRule('password', 'Passwort ist falsch');
             return false;
         }

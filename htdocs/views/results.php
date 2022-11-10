@@ -64,3 +64,8 @@
         </tbody>
     </table>
 <?php endif; ?>
+
+
+<?php if($CarResults == null && $BlogResults == null): ?>
+    <h2>Keine Ergebnisse</h2>
+<?php endif; ?>

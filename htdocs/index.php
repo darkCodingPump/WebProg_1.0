@@ -35,9 +35,11 @@ $app->router->get('/logout', [AuthController::class, 'logout']);
 $app->router->get('/profile', [AuthController::class, 'profile']);
 
 $app->router->get('/blog', [BlogController::class, 'getAll']);
+$app->router->post('/blog', [SearchController::class, 'searchFor']);
 $app->router->get('/blog/{id}', [BlogController::class, 'getSpecific']);
 
 $app->router->get('/car', [CarController::class, 'getAll']);
+$app->router->post('/car', [SearchController::class, 'searchFor']);
 $app->router->get('/car/{id}', [CarController::class, 'getSpecific']);
 
 $app->run();
