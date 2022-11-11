@@ -69,7 +69,7 @@ class Application
         $primaryValue = $user->{$primaryKey};
         $this->session->set('user', $primaryValue);
         return true;
-    }f
+    }
     //Benutzer ausloggen 
     public function logout()
     {
