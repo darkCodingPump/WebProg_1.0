@@ -17,3 +17,9 @@ Viel Spaß!
 
 ## Ich hab Bugs gefunden
 Glückwunsch.
+
+## Ansonsten:
+Gerne auf GutHub folgen und nen Stern geben ;)
+https://github.com/darkCodingPump/WebProg_1.0
+
+Grüße
