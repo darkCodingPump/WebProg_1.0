@@ -10,7 +10,6 @@ class Request
     {
         return strtolower($_SERVER['REQUEST_METHOD']);
     }
-
     public function getUrl()
     {
         $path = $_SERVER['REQUEST_URI'];
@@ -30,7 +29,7 @@ class Request
     {
         return $this->getMethod() === 'post';
     }
-
+    // Request Body gegen Injections und anderem Säubern und aufbereiten
     public function getBody()
     {
         $data = [];
@@ -46,22 +45,18 @@ class Request
         }
         return $data;
     }
-
-    /**
-     * @param $params
-     * @return self
-     */
+    //Routen Parameter setzen
     public function setRouteParams($params)
     {
         $this->routeParams = $params;
         return $this;
     }
-
+    //Routen Parameter leer zurückgeben
     public function getRouteParams()
     {
         return $this->routeParams;
     }
-
+    // Routen-Parameter zurückgeben
     public function getRouteParam($param, $default = null)
     {
         return $this->routeParams[$param] ?? $default;

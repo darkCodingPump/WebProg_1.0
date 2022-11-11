@@ -9,14 +9,14 @@ use app\core\Response;
 use app\models\blog;
 use app\models\Car;
 use app\models\SearchForm;
-
+//SearchController händelt Suchanfragen
 class SearchController extends Controller
 {
     public ?DbModel $blog;
     public ?DbModel $car;
     public array $CarResults;
     public array $BlogResults;
-
+    //Allgemeine globale Suche
     public function searchFor(Request $request, Response $response)
     {
         $SearchForm = new SearchForm();

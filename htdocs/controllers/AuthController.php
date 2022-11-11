@@ -9,9 +9,10 @@ use app\core\Response;
 use app\models\LoginForm;
 use app\models\User;
 
+//AuthController händelt Login- und Registrierungsangelegenheiten
 class AuthController extends Controller
 {
-
+    // Login Handling initiiert von Login-Formular
     public function login(Request $request, Response $response)
     {
         $loginForm = new LoginForm();
@@ -28,7 +29,7 @@ class AuthController extends Controller
             'model' => $loginForm
         ]);
     }
-
+    // Register Handling initiiert von Register-Formular
     public function register(Request $request)
     {
         $user = new User();

@@ -1,7 +1,7 @@
 <?php
 
 namespace app\core;
-
+//Model Grundgerüst
 abstract class Model
 {
     public const RULE_REQUIRED = 'required';
@@ -11,7 +11,7 @@ abstract class Model
     public const RULE_MATCH = 'match';
     public const RULE_UNIQUE = 'unique';
     public array $errors = [];
-
+    //Daten ins Model einlesen
     public function loadData($data)
     {
         foreach ($data as $key => $value) {
@@ -22,7 +22,7 @@ abstract class Model
     }
 
     abstract public function rules(): array;
-
+    //Angegebene Reglen validieren
     public function validate()
     {
         foreach ($this->rules() as $attribute => $rules) {
@@ -63,7 +63,7 @@ abstract class Model
         }
         return empty($this->errors);
     }
-
+    //nicht gefolgete Regeln sammeln
     public function addErrorByRule(string $attribute, string $rule, $params = []): void
     {
         $errorMessage = $this->errorMessages()[$rule] ?? '' ;
@@ -72,7 +72,7 @@ abstract class Model
         }
         $this->errors[$attribute][] = $errorMessage;
     }
-
+    //Sammlung von Error Nachrichten
     public function errorMessages(): array
     {
         return [

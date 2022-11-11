@@ -1,11 +1,11 @@
 <?php
 
 namespace app\core;
-
+//Datenbank Klasse
 class Database
 {
     public \PDO $pdo;
-
+    //DB Verbindung anhand .env Datei
     public function __construct(array $config)
     {
         $dsn = $config['dsn'] ?? '';
@@ -14,7 +14,7 @@ class Database
         $this->pdo = new \PDO($dsn, $user, $password);
         $this->pdo->setAttribute(\PDO::ATTR_ERRMODE,\PDO::ERRMODE_EXCEPTION);
     }
-
+    //Migrationen in migrations/ aufrufen
     public function applyMigrations()
     {
         $this->createMigrationsTable();
@@ -43,7 +43,7 @@ class Database
             echo "Keine offenen Migrationen".PHP_EOL;
         }
     }
-
+    //Migrations-Table
     protected function createMigrationsTable()
     {
         $this->pdo->exec("CREATE TABLE IF NOT EXISTS migrations (
@@ -52,19 +52,19 @@ class Database
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )  ENGINE=INNODB;");
     }
-
+    //Angewandte Migrationen ausgeben
     public function getAppliedMigrations()
     {
         $statement = $this->pdo->prepare("SELECT migration FROM migrations");
         $statement->execute();
         return $statement->fetchAll(\PDO::FETCH_COLUMN);
     }
-
+    //SQL-String prepare
     public function prepare($sql)
     {
         return $this->pdo->prepare($sql);
     }
-
+    //Angewandte Migrationen in Table speichern
     public function saveMigrations(array $migrations){
         $str = implode(",",array_map(fn($m) => "('$m')", $migrations));
 

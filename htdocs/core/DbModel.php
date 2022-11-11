@@ -9,7 +9,7 @@ abstract class DbModel extends Model
     abstract public function attributes(): array;
 
     abstract public function primaryKey() :string;
-
+    //Model in DB speichern
     public function save()
     {
         $tableName = $this->tableName();
@@ -23,10 +23,11 @@ abstract class DbModel extends Model
         $statement->execute();
         return true;
     }
+    //SQL string prepare
     public static function prepare($SQL){
         return Application::$app->db->pdo->prepare($SQL);
     }
-
+    //Objekt anhand von ID finden
     public static function findInstance($where)
     {
         $tableName = static::tableName();
@@ -39,7 +40,7 @@ abstract class DbModel extends Model
         $statement->execute();
         return $statement->fetchObject(static::class);
     }
-
+    //Alle Objekte eines Models ausgeben
     public function getAllInstances()
     {
         $tableName = static::tableName();
@@ -47,6 +48,7 @@ abstract class DbModel extends Model
         $statement->execute();
         return $statement->fetchAll(\PDO::FETCH_ASSOC);
     }
+    //zufällige Instanzen von Objekten ausgeben
     public function getRandomInstances($nmbr)
     {
         $tableName = static::tableName();

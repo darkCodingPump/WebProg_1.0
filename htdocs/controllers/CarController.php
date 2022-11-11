@@ -7,10 +7,11 @@ use app\core\Controller;
 use app\core\DbModel;
 use app\core\Request;
 use app\models\Car;
-
+//CarController händelt CRUD Operationen an Car-Objekten
 class CarController extends Controller
 {
     public ?DbModel $car;
+    //Alle Autos aus der DB ziehen
     public function getAll()
     {
         $entrys = [];
@@ -20,7 +21,7 @@ class CarController extends Controller
             'models' => $entrys
         ]);
     }
-
+    // Speziefisches Auto aus Datenbank bekommen
     public function getSpecific(Request $request)
     {
         $this->car = new car();
@@ -31,6 +32,7 @@ class CarController extends Controller
             'model' => $this->car
             ]);
     }
+    //Auto in Datenbank hinzufügen
     public function create(Request $request)
     {
         $car = new car();
@@ -41,12 +43,10 @@ class CarController extends Controller
                 Application::$app->response->redirect('/');
                 exit;
             }
-            return $this->render('register', [
+            return $this->render('car', [
                 'model' => $car
             ]);
         }
-        return $this->render('register', [
-            'model' => $car
-        ]);
+        return $response->redirect('/');
     }
 }

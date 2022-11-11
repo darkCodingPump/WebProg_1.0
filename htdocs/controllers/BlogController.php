@@ -7,11 +7,11 @@ use app\core\Controller;
 use app\core\DbModel;
 use app\core\Request;
 use app\models\blog;
-
+//BlogController händelt CRUD-Aktionen an BlogObjekten
 class BlogController extends Controller
 {
     public ?DbModel $blog;
-
+    //Alle Blog-Objekte aus der DB ziehen
     public function getAll()
     {
         $entrys = [];
@@ -21,7 +21,7 @@ class BlogController extends Controller
             'models' => $entrys
         ]);
     }
-
+    //Einzelnes Blog Objekt anhand ID aus DB ziehen
     public function getSpecific(Request $request)
     {
         $this->blog = new blog();
@@ -32,6 +32,7 @@ class BlogController extends Controller
             'model' => $this->blog
             ]);
     }
+    //Neues BlogObjekt in Datenbank schreiben 
     public function create(Request $request)
     {
         $blog = new blog();
@@ -42,12 +43,10 @@ class BlogController extends Controller
                 Application::$app->response->redirect('/');
                 exit;
             }
-            return $this->render('register', [
+            return $this->render('blog', [
                 'model' => $blog
             ]);
         }
-        return $this->render('register', [
-            'model' => $blog
-        ]);
+        return $response->redirect('/');
     }
 }
